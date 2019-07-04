@@ -33,13 +33,13 @@ func (a *sendmail) Metadata() *activity.Metadata {
 func (a *sendmail) Eval(ctx activity.Context) (done bool, err error) {
 	
 	
-	server := ctx.GetInput("Aserver").(string)
-	port := ctx.GetInput("Bport").(string)
-	sender := ctx.GetInput("Csender").(string)
-	apppass := ctx.GetInput("Dapppassword").(string)
-	ercpnt := ctx.GetInput("Ercpnt").(string)
-	fsub := ctx.GetInput("Fsub").(string)
-	gbody := ctx.GetInput("Gbody").(string)
+	server := ctx.GetInput("A_server").(string)
+	port := ctx.GetInput("B_port").(string)
+	sender := ctx.GetInput("C_sender").(string)
+	apppass := ctx.GetInput("D_apppassword").(string)
+	ercpnt := ctx.GetInput("E_rcpnt").(string)
+	fsub := ctx.GetInput("F_sub").(string)
+	gbody := ctx.GetInput("G_body").(string)
 	
 	
 	

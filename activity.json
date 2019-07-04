@@ -1,46 +1,46 @@
 {
-  "name": "sendmailinputsabc23",
+  "name": "sendmail",
   "version": "0.0.1",
   "type": "flogo:activity",
   "ref": "github.com/purna-s/sendmail",  
-  "title": "sendmail_CR",
+  "title": "SendMail",
   "description": "Send mail to recipient",
   "author": "Purna S <purna.sadanala@prowesssoft.com>",
 
   "inputs":[
     
 	{
-      "name": "Aserver",
+      "name": "A_server",
       "type": "string",
       "required": true
     },
 	{
-      "name": "Bport",
+      "name": "B_port",
       "type": "string",
       "required": true
     },
 	{
-      "name": "Csender",
+      "name": "C_sender",
       "type": "string",
       "required": true
     },
 	{
-      "name": "Dapppassword",
+      "name": "D_apppassword",
       "type": "string",
       "required": true
     },
     {
-      "name": "Ercpnt",
+      "name": "E_rcpnt",
       "type": "string",
       "required": true
     },
 	{
-      "name": "Fsub",
+      "name": "F_sub",
       "type": "string",
       "required": true
     },
 	{
-      "name": "Gbody",
+      "name": "G_body",
       "type": "string",
       "required": true
     }

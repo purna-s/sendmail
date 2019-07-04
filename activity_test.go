@@ -50,13 +50,13 @@ func TestEval(t *testing.T) {
 	tc := test.NewTestActivityContext(getActivityMetadata())
 
 	//setup attrs
-	tc.SetInput("Aserver", "smtp.gmail.com")
-	tc.SetInput("Bport", "587")
-	tc.SetInput("Csender", "sendalertsforq@gmail.com")
-	tc.SetInput("Dapppassword", "ptcxejoylzgtrfmh")
-	tc.SetInput("Ercpnt", "purna.sadanala@prowesssoft.com")
-	tc.SetInput("Fsub", "Q_Subscriber_Down!")
-	tc.SetInput("Gbody", "Subscriber_for_Queue_is_down.")
+	tc.SetInput("A_server", "smtp.gmail.com")
+	tc.SetInput("B_port", "587")
+	tc.SetInput("C_sender", "sendalertsforq@gmail.com")
+	tc.SetInput("D_apppassword", "ptcxejoylzgtrfmh")
+	tc.SetInput("E_rcpnt", "purna.sadanala@prowesssoft.com")
+	tc.SetInput("F_sub", "Q_Subscriber_Down!")
+	tc.SetInput("G_body", "Subscriber_for_Queue_is_down.")
 
 	done, err := act.Eval(tc)
 	if !done {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"strings"
-	"times"
+	"time"
 	"net/smtp"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"strings"
+	"times"
 	"net/smtp"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
@@ -41,7 +42,7 @@ func (a *sendmail) Eval(ctx activity.Context) (done bool, err error) {
 	fsub := ctx.GetInput("F_sub").(string)
 	gbody := ctx.GetInput("G_body").(string)
 	
-	
+	dt := time.Now()
 	
 	// Set up authentication information.
 	//auth := smtp.PlainAuth(
@@ -85,6 +86,6 @@ func (a *sendmail) Eval(ctx activity.Context) (done bool, err error) {
 	fmt.Println("Activity has sent the mail Successfully")
 
 	ctx.SetOutput("output", "Mail_Sent_Successfully")
-
+	ctx.SetOutput("SentTime", dt)
 	return true, nil
 }

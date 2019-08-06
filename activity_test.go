@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/smtp"
 	"strings"
+	"time"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 )
@@ -67,5 +68,8 @@ func TestEval(t *testing.T) {
 
 	output := tc.GetOutput("output")
 	assert.Equal(t, output, output)
+	output := tc.GetOutput("SentTime")
+	assert.Equal(t, SentTime, SentTime)
+
 
 }
